@@ -1,0 +1,98 @@
+@font-face {
+    font-family: titulo;
+    src: url(./fonts/greater-theory-font/titulo.otf) format("opentype");
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color:rgb(40, 42, 54);
+}
+
+header {
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "titulo";
+}
+
+.form_box {
+    display: flex;
+    padding-top:10vw;
+    margin : 0;
+    justify-content:center;
+    color:white;
+
+
+}
+
+form {
+    border:1.5px solid rgb(253, 253, 253);
+    padding:10px;
+    display: flex;
+    margin: 0;
+    border-radius:20px;
+    flex-direction:column;
+    align-items: center;
+    width: 20vw;
+    height:20vw
+}
+
+#wlcm {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+}
+
+.campos label {
+    padding-top: 13px;
+    color:white;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.campos input {
+    border : 1.5px solid white;
+    border-radius : 12px;
+    width:206px;
+    height:20px
+}
+
+.showPass{
+    display : flex;
+    width : 80%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size : 10px;
+}
+
+.rgst {
+    padding-bottom : 10px
+}
+
+.rgst a {
+    text-decoration : none;
+    color : white;
+    font-family :Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size : 14px;
+}
+
+#lg_btn {
+    width:200px;
+    height: 5vw;
+    color : white;
+    background-color:rgb(53, 134, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius : 20px;
+    border : 1.5px solid white;
+    transition : 0.4s;
+}
+
+#lg_btn:hover {
+    background-color : rgb(48, 108, 197);
+    border : 1px solid white;
+}
