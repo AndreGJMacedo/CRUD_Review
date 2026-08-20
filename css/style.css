@@ -50,6 +50,7 @@ form {
 
 .campos label {
     padding-top: 13px;
+    padding : 10px;
     color:white;
     font-weight:bold;
     font-family:Arial, Helvetica, sans-serif;
@@ -58,14 +59,17 @@ form {
     border : 1.5px solid white;
     border-radius : 12px;
     width:206px;
-    height:20px
+    height:29px
 }
 
 .showPass{
     display : flex;
-    width : 80%;
+    width : 8vw;
+    height : 50px;
     font-family:Arial, Helvetica, sans-serif;
     font-size : 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .rgst {
@@ -82,7 +86,7 @@ form {
 
 #lg_btn {
     width:200px;
-    height: 5vw;
+    height:50px;
     color : white;
     background-color:rgb(53, 134, 255);
     font-family: Arial, Helvetica, sans-serif;
