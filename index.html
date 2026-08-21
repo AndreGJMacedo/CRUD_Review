@@ -18,20 +18,23 @@
                 <label for="usuario">
                     Usuário
                 </label>
-                <input type="text" name="usuario" id="user_nm">
+                <input type="text" name="usuario" oninput="validate_user()" id="user_nm" placeholder="UserName">
             </div>
             <div class="campos">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="psw">
+                <input type="password" name="senha" id="psw" placeholder="Passwod">
             </div>
             <div class="showPass">
                 <input type="checkbox" name="showPss" id="box_pass" onclick="showPass()" >
                 <p>Mostrar Senha</p>
             </div>
             <div class="rgst">
-                <a href="./register.html">Registrar-se</a>
+                <a href="#">Recuperar senha</a>
             </div>
-            <button type="submit" id="lg_btn">Entrar</button>
+            <div class="rgst">
+                <a href="#">Registrar-se</a>
+            </div>
+            <button type="submit" id="lg_btn" disabled=>Entrar</button>
                       
         </form>
     </div>
