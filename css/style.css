@@ -92,8 +92,10 @@ form {
     border: 1.5px solid white;
     margin-top: 7px;
     transition: 0.4s;  
+    cursor: pointer;
 }
 #lg_btn:disabled{
     background-color: rgb(72, 107, 160);
+    cursor:default;
 
 }
