@@ -6,7 +6,6 @@
 body {
     margin:0;
     padding:0;
-    background-color:rgb(40, 42, 54);
 }
 
 header {
@@ -23,12 +22,11 @@ header {
     margin : 0;
     justify-content:center;
     color:white;
-
-
 }
 
 form {
     border:1.5px solid rgb(253, 253, 253);
+    background-color:rgb(40, 42, 54);
     padding:10px;
     display: flex;
     margin: 0;
@@ -57,10 +55,18 @@ form {
 }
 .campos input {
     border : 1.5px solid white;
-    border-radius : 12px;
+    border-radius : 7px;
     width:206px;
     height:29px
 }
+
+.campos input:focus {
+    border : 1.5px solid rgb(112, 203, 255);
+    border-radius : 7px;
+    width:206px;
+    height:29px
+}
+
 
 .showPass{
     display : flex;
