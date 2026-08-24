@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/register.css">
+    <script src="./js/controllers/LoginFuncions.js" defer></script>
     <title>Registrar-se</title>
 </head>
 <body>
     <header>
         <h1><a href="./index.html">Login</a></h1>
     </header>
+      <div class="form_box">
+        <form>
+            <h2 id="wlcm">Registrar-se</h2>
+            <div class="campos">
+                <label for="usuario">
+                    Usuário
+                </label>
+                <input type="text" name="usuario" id="user_nm" placeholder="UserName">
+            </div>
+            <div class="campos">
+                <label for="usuario">
+                    E-mail
+                </label>
+                <input type="email" name="email" id="user_nm" placeholder="E-mail">
+            </div>
+            <div class="campos-pw">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" class="psw" oninput="validate_user()" placeholder="Passwod">
+            </div>
+            <div class="campos-cpw">
+                <label for="senha">Confirmar Senha</label>
+                <input type="password" name="senha" class="psw" oninput="validate_user()" placeholder="Passwod">
+            </div>
+            <div class="showPass">
+                <input type="checkbox" name="showPss" id="box_pass" onclick="showPass()" >
+                <p>Mostrar Senha</p>
+            </div>
+
+            <button type="submit" id="lg_btn" disabled=>Entrar</button>
+
+             <div class="rgst">
+                <a href="#">Já sou registrado</a>
+            </div>
+                      
+        </form>
+    </div>
 </body>
 </html>

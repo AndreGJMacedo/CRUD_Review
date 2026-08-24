@@ -1,17 +1,21 @@
-let pw = document.querySelector('#psw');
+let pws = document.querySelectorAll('.psw');
+let us = document.querySelector('#user_nm');
 let bt = document.querySelector('#lg_btn');
 
+
 function showPass() {
-    if (pw.type === 'password') {
+    pws.forEach((pw) => {
+        if (pw.type === 'password') {
         pw.type = 'text';
     }
     else {
         pw.type = 'password'
     }
+    })
 };
 
 function validate_user() {
-    if (pw.value !== '') {
+    if (pws.value.trim() !== '' && us.value.trim() !== '') {
         bt.disabled = false;
     }else {
         bt.disabled = true;
