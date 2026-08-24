@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Login</h1>
+        <h1><a>Login</a></h1>
     </header>
     <div class="form_box">
         <form>
@@ -18,11 +18,11 @@
                 <label for="usuario">
                     Usuário
                 </label>
-                <input type="text" name="usuario" oninput="validate_user()" id="user_nm" placeholder="UserName">
+                <input type="text" name="usuario" id="user_nm" placeholder="UserName">
             </div>
             <div class="campos">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="psw" placeholder="Passwod">
+                <input type="password" name="senha" id="psw" oninput="validate_user()" placeholder="Passwod">
             </div>
             <div class="showPass">
                 <input type="checkbox" name="showPss" id="box_pass" onclick="showPass()" >
@@ -33,7 +33,7 @@
 
              <div class="rgst">
                 <a href="#">Recuperar senha</a>
-                <a href="#">Registrar-se</a>
+                <a href="./register.html">Registrar-se</a>
             </div>
                       
         </form>

@@ -13,7 +13,13 @@ header {
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: "titulo";
+}
+
+header a {
+    text-decoration: none;
+    color: white;
 }
 
 .form_box {
