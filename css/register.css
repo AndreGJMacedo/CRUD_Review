@@ -26,7 +26,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(90vh - 100px);
+    min-height: calc(60vh - 400px);
     padding: 20px;
     color: white;
 }
@@ -39,6 +39,8 @@ form {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    height: 90%;
+    min-height: 200px;
     width: 70%;
     max-width: 310px;
 }
@@ -87,4 +89,45 @@ form {
     height: 35px;
     border: 1.5px solid white;
     border-radius: 7px;
+}
+
+.showPass {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.rgst {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rgst a{
+    
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+#lg_btn {
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    color: white;
+    background-color: rgb(77, 147, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1.5px solid white;
+    margin-top: 7px;
+    transition: 0.4s;  
+    cursor: pointer;
+}
+
+#lg_btn:disabled{
+    background-color: rgb(72, 107, 160);
+    cursor:default;
+
 }

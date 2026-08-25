@@ -1,23 +1,19 @@
-let pws = document.querySelectorAll('.psw');
-let us = document.querySelector('#user_nm');
-let bt = document.querySelector('#lg_btn');
+let pw = document.querySelector('#psw');
+let usnm = document.querySelector('#user_nm');
+let btn = document.querySelector('#lg_btn');
 
+function Validate_btn_lg() {
+    if (pw.value !== '' && usnm.value !== '') {
+        btn.disabled = false;
+    } else{
+        btn.disabled = true;
+    }
+}
 
-function showPass() {
-    pws.forEach((pw) => {
-        if (pw.type === 'password') {
+function ShowPass_lg() {
+    if(pw.type === 'password') {
         pw.type = 'text';
-    }
-    else {
+    } else{
         pw.type = 'password'
-    }
-    })
-};
-
-function validate_user() {
-    if (pws.value.trim() !== '' && us.value.trim() !== '') {
-        bt.disabled = false;
-    }else {
-        bt.disabled = true;
     }
 }
