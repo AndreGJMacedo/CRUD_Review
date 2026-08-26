@@ -24,19 +24,12 @@ form.addEventListener('submit', try_lg);
 
 function try_lg(event) {
     event.preventDefault();
-    const newUS = localStorage.getItem('users')
+    const newUS = localStorage.getItem('users');
+    let jnewUS = JSON.parse(newUS);
 
-    if (newUS !== null) {
-        const user_new = JSON.parse(newUS)
-        if (pw.value === user_new.password && usnm.value === user_new.user) {
-            console.log(user_new)
-        }
-        else {
-            alert('Usuario ou senha incorretos!')
-        }
-    }
-    else {
-        alert("você não tem cadastro")
-    }
-
+    const user_find = jnewUS.find((user) => {
+        return user.username === usnm.value
+    })
+    console.log(user_find);
+    
 }
