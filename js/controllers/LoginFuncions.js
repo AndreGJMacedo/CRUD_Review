@@ -24,7 +24,7 @@ form.addEventListener('submit', try_lg);
 
 function try_lg(event) {
     event.preventDefault();
-    const newUS = localStorage.getItem('new_user')
+    const newUS = localStorage.getItem('users')
 
     if (newUS !== null) {
         const user_new = JSON.parse(newUS)

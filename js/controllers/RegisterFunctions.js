@@ -28,17 +28,28 @@ function validate_user() {
     }
 }
 
-form.addEventListener('submit', create_user);
+form.addEventListener('submit', create_users);
 
-function create_user(event) {
-
+function create_users(event) {
     event.preventDefault();
-    const user = {
-        user: us.value,
+    let users;
+
+    let user = {
+        username: us.value,
         password: pws[0].value
     };
-    const JsonUser = JSON.stringify(user);
-    localStorage.setItem('new_user', JsonUser);
-    console.log(JsonUser);
-}
 
+    let check_us = localStorage.getItem('users');
+
+
+
+    if (check_us === null) {
+        users = [];
+    }
+    else {
+        users = JSON.parse(check_us);
+    }
+    users.push(user)
+    let saved_user = JSON.stringify(users)
+    localStorage.setItem('users',saved_user)
+}
