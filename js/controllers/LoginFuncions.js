@@ -1,6 +1,8 @@
 let pw = document.querySelector('#psw');
 let usnm = document.querySelector('#user_nm');
 let btn = document.querySelector('#lg_btn');
+let form = document.querySelector('#form');
+
 
 function Validate_btn_lg() {
     if (pw.value !== '' && usnm.value !== '') {
@@ -8,7 +10,7 @@ function Validate_btn_lg() {
     } else{
         btn.disabled = true;
     }
-}
+};
 
 function ShowPass_lg() {
     if(pw.type === 'password') {
@@ -16,4 +18,18 @@ function ShowPass_lg() {
     } else{
         pw.type = 'password'
     }
+};
+
+form.addEventListener('submit',try_lg);
+
+function try_lg(event) {
+    event.preventDefault();
+    const newUS = localStorage.getItem('new_user')
+    const user_new = JSON.parse(newUS)
+
+    if(pw.value === user_new.password && usnm.value === user_new.user){
+        console.log(user_new)
+    }
+
+
 }

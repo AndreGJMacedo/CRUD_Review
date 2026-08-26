@@ -42,6 +42,7 @@ function create_user(event) {
     const JsonUser = JSON.stringify(user);
 
     localStorage.setItem('new_user',JsonUser);
+    const saved_user = localStorage.getItem('new_user');
 
     console.log(JsonUser);
 }
