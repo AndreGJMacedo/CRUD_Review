@@ -1,7 +1,8 @@
 let pws = document.querySelectorAll('.psw');
 let us = document.querySelector('#user_nm');
-let eml = document.querySelector('#user_email')
+let eml = document.querySelector('#user_email');
 let bt = document.querySelector('#lg_btn');
+let form = document.querySelector('#form');
 
 
 
@@ -26,3 +27,22 @@ function validate_user() {
         bt.disabled = true;
     }
 }
+
+form.addEventListener('submit',create_user);
+
+function create_user(event) {
+
+    event.preventDefault();
+
+    const user = {
+        user : us.value,
+        password: pws[0].value
+    };
+
+    const JsonUser = JSON.stringify(user);
+
+    localStorage.setItem('new_user',JsonUser);
+
+    console.log(JsonUser);
+}
+
