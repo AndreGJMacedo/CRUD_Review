@@ -51,5 +51,5 @@ function create_users(event) {
     }
     users.push(user)
     let saved_user = JSON.stringify(users)
-    localStorage.setItem('users',saved_user)
+    localStorage.setItem('users', saved_user)
 }
